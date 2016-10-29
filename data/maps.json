@@ -1,0 +1,62 @@
+{
+	"rooms": [
+		{
+			"north": 1,
+			"name": "Kolpruz",
+			"desc": "This is Kolpruz, the capital city of the kingom of the same name.",
+			"npcs": [
+				{
+					"name": "young man",
+					"msg": "Hello! Welcome in Kolpruz."
+				},
+				{
+					"name": "old doctor",
+					"textn": "Hello! Did you see my key? I'll give you 5 copper coins if you find it.",
+					"texts": "Thank you very much!",
+					"wants": [0],
+					"gives": [1,1,1,1,1]
+				}
+			],
+			"objs": [0,1,1,1]
+		},
+		{
+			"south": 0,
+			"name": "Castle Kolpruz",
+			"desc": "This is the biggest Castle in this kingdom. You can see the throne room from the courtyard.",
+			"objs": [1,1],
+			"npcs": [
+				{
+					"name": "Royal Guard",
+					"textn": "You need 10 copper coins to pass.",
+					"texts": "You may pass.",
+					"wants": [1,1,1,1,1,1,1,1,1,1],
+					"gives": [2]
+				}
+			],
+			"entrances": [
+				{
+					"key": 2,
+					"dest": 0
+				}
+			]
+		}
+	],
+	"items": [
+		{
+			"name": "small key",
+			"type": "Key",
+			"desc": "Keys open doors! You can use the small keys only once, though..."
+		},
+		{
+			"name": "copper coin",
+			"type": "Schatz",
+			"val": 1,
+			"desc": "Copper coins is the currency in this kingdom. Make sure to pick them up everywhere you see them!"
+		},
+		{
+			"name": "Castle Key",
+			"type": "Key",
+			"desc": "You can enter the tourist section to the castle with this key."
+		}
+	]
+}
